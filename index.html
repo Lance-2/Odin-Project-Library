@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1>Your Library</h1>
+    <div class="controls-row">
+        <input type="text" id="searchInput" placeholder="What is the Title"/>
+        <input type="text" id="authorInput" placeholder="Who is the Author?"/>
+        <input type="text" id="PageInput" placeholder="How many Pages?"/>
+        <div class="read-group">
+            <input type="checkbox" id="ReadInput"/>
+            <label for="ReadInput">Have you read it?</label>
+        </div>
+        <button id="addBookButton">Add Book</button>       
+    </div>
+
+    <div class="book-list" id="bookList">
+        <!-- Books will be displayed here -->
+        <div class="book-card">
+            <h2>Book Title</h2>
+            <p>Author: Author Name</p>
+            <p>Pages: 123</p>
+            <p>Status: Read</p>
+            <button class="remove-button">Remove</button>
+            <button class="read-button">Mark as Unread</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
